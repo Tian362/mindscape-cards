@@ -1,0 +1,17 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Node (in case you use any tooling later)
+node_modules/
+
+# Editor folders
+.vscode/
+.idea/
+
+# Env files
+.env
+
+# Coverage / build artifacts
+coverage/
+dist/
