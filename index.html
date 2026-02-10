@@ -4,34 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mindscape Cards</title>
-    <style>
-        .cards {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-        }
-        .card {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            overflow: hidden;
-            max-width: 200px;
-        }
-        .card img {
-            width: 100%;
-            height: auto;
-        }
-    </style>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css" />
 </head>
 <body>
-    <h1>Welcome to Mindscape Cards</h1>
-    <div class="cards">
-        <div class="card">
-            <img src="cards/card-1.jpg" alt="Card-1">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/path/to/card1.jpg" alt="Card 1" /></div>
+            <div class="swiper-slide"><img src="/path/to/card2.jpg" alt="Card 2" /></div>
         </div>
-        <div class="card">
-            <img src="cards/card-2.jpg" alt="Card 2">
-        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
+    
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>
