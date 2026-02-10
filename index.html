@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mindscape Cards</title>
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Card Swiper</title>
 </head>
 <body>
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="/path/to/card1.jpg" alt="Card 1" /></div>
-            <div class="swiper-slide"><img src="/path/to/card2.jpg" alt="Card 2" /></div>
+            <div class="swiper-slide">
+                <img src="cards/card-1.jpg" alt="Card 1">
+            </div>
+            <div class="swiper-slide">
+                <img src="cards/card-2.jpg" alt="Card 2">
+            </div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
@@ -19,12 +22,10 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </div>
-    
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper-container', {
-            loop: true,
+        var swiper = new Swiper('.swiper-container', {
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -33,6 +34,7 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+            loop: true,
         });
     </script>
 </body>
