@@ -2,7 +2,7 @@
 // Adding double-click toggle functionality to show text instead of images
 
 document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.card'); // Assuming cards have the class 'card'
+    const cards = document.querySelectorAll('.swiper-slide'); // Assuming cards have the class 'card'
 
     cards.forEach(card => {
         card.addEventListener('dblclick', () => {
