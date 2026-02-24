@@ -26,46 +26,10 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 
 .swiper-slide img {
-    width: 100%;
     height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-}
-
-.swiper-slide img:hover {
-    opacity: 0.9;
-}
-
-.text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 40px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.text p {
-    max-width: 80%;
-    line-height: 1.6;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.text.visible {
-    display: flex;
+    width: auto;
+    object-fit: contain;
 }
