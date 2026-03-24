@@ -62,22 +62,14 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("cards/background-1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    color: #111;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
     transform: rotateY(180deg);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transition: transform var(--flip-duration), opacity var(--flip-duration), visibility var(--flip-duration);
     backface-visibility: hidden;
-}
-
-.swiper-slide .card .text p {
-    padding: 24px;
-    line-height: 1.4;
 }
 
 .swiper-slide.flipped .card img {
