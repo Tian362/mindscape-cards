@@ -34,18 +34,29 @@ html, body {
     position: relative;
 }
 
-.swiper-slide img {
+.swiper-slide .card {
+    position: relative;
+    height: 100%;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide .card img {
     height: 100%;
     width: auto;
+    max-width: 100%;
     object-fit: contain;
     transition: transform var(--flip-duration), opacity var(--flip-duration), visibility var(--flip-duration);
     backface-visibility: hidden;
 }
 
-.swiper-slide .text {
+.swiper-slide .card .text {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -61,14 +72,14 @@ html, body {
     backface-visibility: hidden;
 }
 
-.swiper-slide.flipped img {
+.swiper-slide.flipped .card img {
     transform: rotateY(180deg);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
 
-.swiper-slide.flipped .text {
+.swiper-slide.flipped .card .text {
     transform: rotateY(0deg);
     opacity: 1;
     visibility: visible;
