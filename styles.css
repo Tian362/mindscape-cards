@@ -62,7 +62,10 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.8);
+    background-image: url("card/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     transform: rotateY(180deg);
     opacity: 0;
